@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "no ad",
+  "description": "I don't want ad",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.baidu.com/*"],
+      "css": ["no_bd.css"]
+    }
+  ]
+
+}
